@@ -1,0 +1,7 @@
+{
+  "name": "CadastroCurso",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

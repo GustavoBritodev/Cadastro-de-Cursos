@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-button type="push" color="primary" slot="start"></ion-menu-button>
+    <ion-title>Cursos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-select label="Escolha o local:" placeholder="Localidade" [(ngModel)]="local">
+      <ion-select-option default></ion-select-option>
+      <ion-select-option>Fortec Sâo Vicente</ion-select-option>
+      <ion-select-option>Fortec Praia Grande</ion-select-option>
+      <ion-select-option>Etec Ruth Cardoso</ion-select-option>
+      <ion-select-option>Etec Aristóteles</ion-select-option>
+    </ion-select>  
+        Você adicionou o local do curso: <b>{{local}}</b>
+  </div>
+
+  <div>
+    <ion-input label="Insira a duração" type="text" [(ngModel)]="item1"></ion-input>
+    <!-- <ion-button size="block" (click)="armazenarDuracao(local, item1)">Insira a duração</ion-button> -->
+    <ion-input label="Insira a data de inicio" type="text" [(ngModel)]="item2"></ion-input>
+    <!-- <ion-button size="block" (click)="armazenarInicio(local, item2)">Insira a data de Inico</ion-button> -->
+    <ion-input label="Insira o nome" type="text" [(ngModel)]="item3"></ion-input>
+    <!-- <ion-button size="block" (click)="armazenarNome(local, item3)">Insira o nome do curso</ion-button> -->
+    <ion-input label="Insira o valor mensal" type="text" [(ngModel)]="item4"></ion-input>
+    <ion-button size="block" (click)="armazenarDuracao(local, item1);armazenarInicio(local, item2);armazenarNome(local, item3);armazenarValor(local, item4)">Enviar</ion-button>
+  </div>
+  <div [innerHtml]="lista"></div>
+  <p>Obrigado pela preferência!</p>
+</ion-content>

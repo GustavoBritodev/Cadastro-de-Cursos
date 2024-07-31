@@ -42,7 +42,7 @@ Este repositório contém uma aplicação desenvolvida utilizando o framework Io
 
 1.  **Clone o Repositório**:
 
-    `git clone https://github.com/usuario/repositorio.git`
+    `git clone https://github.com/GustavoBritodev/Cadastro-de-Cursos.git`
     
     `cd repositorio` 
     
